@@ -51,7 +51,7 @@ a {
 .cro1 {
     width: 200px;
     height: 200px;
-    background-image: url(/img/cro3.png);
+    background-image: url(./img/cro3.png);
     background-size: cover;
     z-index: 9;
 }
@@ -73,7 +73,7 @@ a {
 .cro3 {
     width: 200px;
     height: 200px;
-    background-image: url(/img/cro2.png);
+    background-image: url(./img/cro2.png);
     background-size: cover;
     z-index: 9;
 }
