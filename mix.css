@@ -1,0 +1,184 @@
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.my-drop-after::after {
+    display: none;
+}
+
+#my-dropdown-menu {
+    left: -120px;
+}
+
+.my-main-height {
+    height: 70%;
+}
+
+.my-circle-font {
+    width: 25px;
+    height: 25px;
+    background-color: #a6ba42;
+}
+
+.my-company-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.my-product-img {
+    width: 50px;
+    height: 50px;
+    border: #a6ba42 3px dashed;
+}
+
+.my-button {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-link {
+    text-decoration: none;
+    /* 去除底線 */
+}
+
+
+.cro1 {
+    width: 200px;
+    height: 200px;
+    background-image: url(/img/cro3.png);
+    background-size: cover;
+    z-index: 9;
+}
+
+@media(max-width: 767px) {
+    .cro1 {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 575px) {
+    .cro1 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.cro3 {
+    width: 200px;
+    height: 200px;
+    background-image: url(/img/cro2.png);
+    background-size: cover;
+    z-index: 9;
+}
+
+.my-exp1-img {
+    width: 500px;
+    height: 300px;
+}
+
+.my-exp2-img {
+    width: 600px;
+    height: 30px;
+}
+
+.my-product-img {
+    width: 50px;
+    height: 50px;
+    border: #a6ba42 3px dashed;
+}
+
+.my-button {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-link {
+    text-decoration: none;
+    /* 去除底線 */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.checked {
+    color: orange;
+}
+
+#map {
+    position: relative;
+}
+
+#keyInfo {
+    width: 20%;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+
+@media(max-width: 1319px) {
+    #keyInfo {
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+}
+
+@media(max-width: 767px) {
+    #keyInfo {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+}
+
+.container-full {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://dummyimage.com/1920x1080);
+    background-size: cover;
+}
+
+.my-round {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7d8652;
+    border: 3px solid black;
+}
+
+@media(max-width: 992px) {
+    .my-round {
+        background-color: #fff;
+    }
+}
+
+.my-right-side {
+    background-color: #7d8652;
+}
+
+@media(max-width: 992px) {
+    .my-right-side {
+        background-color: transparent;
+    }
+}
+.btn-heart {
+    width: 2rem;
+    height: 2rem;
+}
+
+.click-heart {
+    background-color: rgb(232, 99, 46)
+}

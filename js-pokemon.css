@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(250, 234, 211);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Arial', 'Cabin Sketch', cursive;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .search-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .search-title {
+    font-size: 24px;
+    font-family: "LXGW WenKai Mono TC";
+  }
+  
+  .search-input {
+    font-size: 24px;
+  }
+  
+  #search-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #pokemon-img{
+    width: 350px;
+    height: 350px;
+  }

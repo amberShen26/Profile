@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .my-max-h-75{
+            max-height: 75vh;
+        }
+        .my-circle{
+          width: 140px;
+          height: 140px;
+        }
+    </style>
+</head>
+<body>
+    <!-- px-5:padding x方向 5:預設的1.5倍 -->
+    <nav class="px-5 navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <header class="mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/f3fb975fddfc926997459848d476cbf6.jpg" class="d-block w-100 my-max-h-75" alt="...">
+                <div class="carousel-caption d-none d-md-block text-start">
+                  <h1>First slide label</h1>
+                  <p>Some representative placeholder content for the first slide.</p>
+                  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/DSC_8358_exportONLY.JPG" class="d-block w-100 my-max-h-75" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Second slide label</h1>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/1636909645793.jpg" class="d-block w-100 my-max-h-75" alt="...">
+                <div class="carousel-caption d-none d-md-block text-end">
+                  <h1>Third slide label</h1>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <main class="container py-5">
+      <section class="row">
+        <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center px-4 py-5">
+         <div class="rounded-circle bg-secondary my-circle"></div>
+         <div class="fs-3">Heading</div>
+         <div class="mb-3 text-center">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</div>
+         <button type="button" class="btn btn-secondary">View details »</button>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center px-4 py-5">
+          <div class="rounded-circle bg-secondary my-circle"></div>
+          <div class="fs-3">Heading</div>
+         <div class="mb-3 text-center">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</div>
+         <button type="button" class="btn btn-secondary">View details »</button> 
+        </div>
+         <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center px-4 py-5">
+          <div class="rounded-circle bg-secondary my-circle"></div>
+          <div class="fs-3 mb-3">Heading</div>
+          <div class="mb-3 text-center">And lastly this, the third column of representative placeholder content.</div>
+          <button type="button" class="btn btn-secondary">View details »</button> 
+        </div>
+      </section>
+      <hr>
+      <section class="row py-5">
+        <div class="col-md-7 d-flex flex-wrap flex-column justify-content-center">
+          <h2 class=" 1h-2 fw-bold fs-1">First featurette heading. It’ll blow your mind.</h2>
+          <div class="fs-5">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</div>
+        </div>
+        <div class="col-md-5 py-3 py-md-0">
+          <!-- https://dummyimage.com/ 假圖產生器 要多大張就 a x b   -->
+          <img class="w-100" src="https://dummyimage.com/500x500" alt="">
+        </div>
+      </section>
+      <hr>
+      <section class="row py-5">
+                                                                          <!-- order-md-1 表示在md畫面以上order會變成1 order是順序 未設定就是0 -->
+        <div class="col-md-7 d-flex flex-wrap flex-column justify-content-center order-md-1">
+          <h2 class=" 1h-2 fw-bold fs-1">Oh yeah, it’s that good. See for yourself.</h2>
+          <div class="fs-5">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</div>
+        </div>
+        <div class="col-md-5 py-3 py-md-0">
+          <img class="w-100" src="https://dummyimage.com/500x500" alt="">
+        </div>
+      </section>
+      <hr>
+      <section class="row py-5">
+        <div class="col-md-7 d-flex flex-wrap flex-column justify-content-center">
+          <h2 class=" 1h-2 fw-bold fs-1">And lastly, this one. Checkmate.</h2>
+          <div class="fs-5">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</div>
+        </div>
+        <div class="col-md-5 py-3 py-md-0">
+          <img class="w-100" src="https://dummyimage.com/500x500" alt="">
+        </div>
+      </section>
+      <hr>
+    </main>
+    <footer class="container">
+      <div class="row pt-5">
+      <div class="col-8">
+        © 2017–2024 Company, Inc. · <a href="https://getbootstrap.com/docs/5.3/examples/carousel/#">Privacy · Terms</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end">
+        <a href="https://getbootstrap.com/docs/5.3/examples/carousel/#">Back to top</a>
+      </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
